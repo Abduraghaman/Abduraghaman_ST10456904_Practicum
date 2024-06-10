@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bluebackground"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="67dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/the_weather_app2"
+        android:textColor="@color/blue"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="185dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="@string/textview"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDay" />
+
+    <EditText
+        android:id="@+id/editTextDay"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/blue"
+        android:ems="10"
+        android:fontFamily="@font/abril_fatface"
+        android:inputType="text"
+        android:text="@string/enter_in_day"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonWeather"
+        android:layout_width="116dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="113dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/weather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonClear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperature" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="113dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonExit"
+        app:layout_constraintStart_toEndOf="@+id/buttonWeather"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperature" />
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="494dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/exit2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonClear"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonDetailed"
+        android:layout_width="107dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/detailed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClear" />
+</androidx.constraintlayout.widget.ConstraintLayout>
